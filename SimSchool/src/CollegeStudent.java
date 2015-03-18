@@ -1,33 +1,33 @@
 
 public class CollegeStudent extends Student {
-	private String subject;
-	private double salary;
+	private String major;
+	private int year;
 	
-	public CollegeStudent(String myName, int myAge, String myGender, int myIdNum,  String myMajor, int myYear) {
-		super(myName, myAge, myGender);
-		subject = mySubject;
-		salary = mySalary;
+	public CollegeStudent(String myName, int myAge, String myGender, String myIdNum, double gpa, int myYear, String myMajor) {
+		super(myName, myAge, myGender, myIdNum, gpa);
+		major = myMajor;
+		year = myYear;
 	}
 	
-	public String getSubject() {
-		return subject;
+	public String getMajor() {
+		return major;
 	}
 	
-	public double getSalary() {
-		return salary;
+	public int getYear() {
+		return year;
 	}
 	
-	public void setSubject(String mySubject) {
-		subject = mySubject;
+	public void setMajor(String myMajor) {
+		major = myMajor;
 	}
 	
-	public void setSalary(double mySalary) {
-		salary = mySalary;
+	public void setYear(int myYear) {
+		year = myYear;
 	}
 	
 	public String toString() {
 		String s = super.toString();
-		s += ", subject: " + subject + ", salary: " + salary;
+		s += ", Major: " + major + ", Year: " + year;
 		return s;
 	}
 }
