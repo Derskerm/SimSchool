@@ -1,3 +1,5 @@
+import gpdraw.DrawingTool;
+
 /**
  * L.A.11.1
  *
@@ -5,7 +7,7 @@
  * a name and an age and a gender
  */
 
-class Person
+class Person extends LivingThing
 {
   private String myName ;   // name of the person
   private int myAge;        // person's age
@@ -53,4 +55,10 @@ class Person
   {
     return myName + ", age: " + myAge + ", gender: " + myGender;
   }
+
+@Override
+public void draw(DrawingTool marker) {
+	// TODO Auto-generated method stub
+	
+}
 }
