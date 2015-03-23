@@ -17,7 +17,7 @@ public class Drawer {
 		Circle c = new Circle(x, y, 50);
 		c.draw(marker);
 		if (p instanceof CollegeStudent) {
-			y+=5;
+			y += 5;
 			Circle g1 = new Circle (x-15, y, 5);
 			Circle g2 = new Circle (x+15, y, 5);
 			g1.draw(marker);

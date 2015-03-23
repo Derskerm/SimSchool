@@ -1,4 +1,5 @@
 package livingthings.sims;
+import shapes.Circle;
 import livingthings.LivingThing;
 import gpdraw.DrawingTool;
 
@@ -58,9 +59,15 @@ public class Person extends LivingThing
     return myName + ", age: " + myAge + ", gender: " + myGender;
   }
 
-@Override
-public void draw(DrawingTool marker) {
-	// TODO Auto-generated method stub
-	
-}
+  public void draw(DrawingTool marker) {
+	int x = super.getX();
+	int y = super.getY();
+    Circle g1 = new Circle (x-10, y, 5);
+	Circle g2 = new Circle (x+10, y, 5);
+	marker.up();
+	marker.move(x-10,y);
+	marker.down();
+	g1.draw(marker);
+	g2.draw(marker);
+  }
 }

@@ -10,7 +10,7 @@ import gpdraw.SketchPad;
 public class Main {
 	
 	public static void main (String[] args) {
-		SketchPad pad = new SketchPad(400, 400);
+		/*SketchPad pad = new SketchPad(400, 400);
 		DrawingTool marker = new DrawingTool(pad);
 		Person bob = new Person("Coach Bob", 27, "M");
 		System.out.println(bob);
@@ -28,7 +28,10 @@ public class Main {
 		drawer.Draw(bob, -75, 75);
 		drawer.Draw(lynne, 75, 75);
 		drawer.Draw(mrJava, -75, -75);
-		drawer.Draw(ima, 75, -75);
+		drawer.Draw(ima, 75, -75);*/
+		
+		Farm f = new Farm();
+		f.printOldMacDonaldSong();
 
 	}
 	

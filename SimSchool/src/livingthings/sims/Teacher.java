@@ -1,5 +1,8 @@
 package livingthings.sims;
 
+import shapes.Circle;
+import gpdraw.DrawingTool;
+
 public class Teacher extends Person {
 	private String subject;
 	private double salary;
@@ -30,5 +33,26 @@ public class Teacher extends Person {
 		String s = super.toString();
 		s += ", subject: " + subject + ", salary: " + salary;
 		return s;
+	}
+	
+	public void draw(DrawingTool marker) {
+		int x = super.getX();
+		int y = super.getY();
+		Circle g1 = new Circle (x-10, y, 5);
+		Circle g2 = new Circle (x+10, y, 5);
+		g1.draw(marker);
+		marker.up();
+		marker.move(x-5,y);
+		marker.down();
+		marker.move(x+5,y);
+		g2.draw(marker);
+		marker.up();
+		marker.move(x-15,y-20);
+		marker.down();
+		marker.move(x-5, y-15);
+		marker.up();
+		marker.move(x+15,y-20);
+		marker.down();
+		marker.move(x+5, y-15);
 	}
 }

@@ -1,4 +1,7 @@
 package livingthings.sims;
+
+import gpdraw.DrawingTool;
+
 /**
  * L.A.11.1
  *
@@ -47,5 +50,23 @@ public class Student extends Person
   {
     return super.toString() +
            ", student id: " + myIdNum + ", gpa: " + myGPA;
+  }
+  
+  public void draw(DrawingTool marker) {
+	int x = super.getX();
+	int y = super.getY();
+	y += 5;
+	marker.up();
+	marker.move(x-15, y);
+	marker.down();
+	marker.drawRect(10, 10);
+	marker.up();
+	marker.move(x-10,y);
+	marker.down();
+	marker.move(x+10, y);
+	marker.up();
+	marker.move(x+15, y);
+	marker.down();
+	marker.drawRect(10, 10);
   }
 }
