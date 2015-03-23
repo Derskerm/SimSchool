@@ -1,3 +1,4 @@
+package gui;
 import gpdraw.DrawingTool;
 
 public interface Drawable {

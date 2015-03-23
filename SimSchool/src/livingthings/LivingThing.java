@@ -1,4 +1,6 @@
+package livingthings;
 import gpdraw.DrawingTool;
+import gui.Drawable;
 
 
 public abstract class LivingThing implements Drawable {

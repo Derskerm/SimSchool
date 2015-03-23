@@ -1,3 +1,11 @@
+package io;
+import java.util.ArrayList;
+
+import livingthings.sims.CollegeStudent;
+import livingthings.sims.Person;
+import livingthings.sims.Student;
+import livingthings.sims.Teacher;
+
 
 public class SimSchoolXMLReader {
 	
@@ -18,18 +26,18 @@ public class SimSchoolXMLReader {
 	}
 	
 	private String getFirstKeyword() {
-		
-	}
-	
-	private String substringInside(int start) {
-		
+		return data.substring(data.indexOf('<') + 1, data.indexOf('>'));
 	}
 	
 	public Person[] toPeople() {
+		ArrayList<Person> people = new ArrayList<Person>();
 		String k = getFirstKeyword();
 		if (k.equalsIgnoreCase("person")) {
 			
 		}
+		Person[] p = new Person[people.size()];
+		people.toArray(p);
+		return p;
 	}
 	
 	private Person toPerson(String s) {

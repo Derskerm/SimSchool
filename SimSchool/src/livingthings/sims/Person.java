@@ -1,3 +1,5 @@
+package livingthings.sims;
+import livingthings.LivingThing;
 import gpdraw.DrawingTool;
 
 /**
@@ -7,7 +9,7 @@ import gpdraw.DrawingTool;
  * a name and an age and a gender
  */
 
-class Person extends LivingThing
+public class Person extends LivingThing
 {
   private String myName ;   // name of the person
   private int myAge;        // person's age

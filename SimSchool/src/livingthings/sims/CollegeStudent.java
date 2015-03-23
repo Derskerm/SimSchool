@@ -1,3 +1,4 @@
+package livingthings.sims;
 
 public class CollegeStudent extends Student {
 	private String major;

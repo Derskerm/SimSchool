@@ -1,3 +1,4 @@
+package livingthings.sims;
 /**
  * L.A.11.1
  *
@@ -5,7 +6,7 @@
  * a grade point average
  */
 
-class Student extends Person
+public class Student extends Person
 {
   private String myIdNum;    // Student Id Number
   private double myGPA;      // grade point average

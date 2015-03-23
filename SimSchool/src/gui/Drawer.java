@@ -1,3 +1,8 @@
+package gui;
+import livingthings.sims.CollegeStudent;
+import livingthings.sims.Person;
+import livingthings.sims.Student;
+import livingthings.sims.Teacher;
 import gpdraw.DrawingTool;
 import shapes.*;
 
